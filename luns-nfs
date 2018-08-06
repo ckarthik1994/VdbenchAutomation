@@ -1,0 +1,3 @@
+sd=default
+sd=sd1,host=slave1,lun=/sfs1/file-*,openflags=o_direct
+sd=sd2,host=slave2,lun=/sfs2/file-*,openflags=o_direct

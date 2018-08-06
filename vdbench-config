@@ -1,0 +1,29 @@
+*	HOST DEFINITIONS
+include=hosts-nfs
+
+*	STORAGE DEVICE DEFINITIONS
+include=luns-nfs
+
+
+
+*	WORKLOAD DEFINITIONS FOR SQL SERVER
+
+wd=SQLworkload,sd=sd*,rdpct=97,seekpct=100,xfersize=8192
+wd=SQL-80-20,sd=sd*,rdpct=80,seekpct=100,xfersize=8192
+wd=SQL-90-10,sd=sd*,rdpct=90,seekpct=100,xfersize=8192
+
+
+*	RUN DEFAULTS FOR SQL SERVER
+rd=default,curve=(10-120,10),warmup=30,elapsed=30,interval=5,iorate=curve
+
+
+*	RUN DEFINITIONS FOR SQL SERVER
+
+*** SQL Workload
+rd=SQL-Workload,wd=SQLworkload,sd=("sd*"),threads=26
+
+*** SQL Workload of 80/20
+rd=SQL-80-20,wd=SQL-80-20,sd=("sd*"),threads=18
+
+*** SQL Workload of 90/20
+rd=SQL-90-10,wd=SQL-90-10,sd=("sd*"),threads=22

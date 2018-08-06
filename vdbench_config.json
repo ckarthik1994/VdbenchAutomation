@@ -1,0 +1,16 @@
+{
+    "keys": [
+        "us-1east.pem"
+    ], 
+    "workloads": [
+        "sqlserver"
+    ], 
+    "hosts": [
+        "12.12.12.12", 
+        "1.1.1.1"
+    ], 
+    "volumes": [
+        "/sfs1", 
+        "/sfs2"
+    ]
+}
