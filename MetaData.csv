@@ -1,0 +1,4 @@
+ImageID,InstanceType,SecurityGroup,SubnetID,KeyFile,InstanceName
+ami-6871a115,t1.micro,sg-123,subnet-001,us-1east,TestInstance_1
+ami-6871a115,t1.micro,sg-456,subnet-001,us-1east,TestInstance_2
+ami-6871a115,t2.micro,sg-789,subnet-001,us-1east,TestInstance_3
