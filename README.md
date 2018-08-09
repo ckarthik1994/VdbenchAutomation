@@ -34,7 +34,7 @@ optional arguments: </br>
   -h, --help            show this help message and exit </br>
   -awsAccessId AWSACCESSID, --awsAccessId AWSACCESSID </br>
                         AWS AccessId of your account </br>
-  -awsAccessKey AWSACCESSKEY, --awsAccessKey AWSACCESSKEY </br>
+  -awsAccessKey AWSACCESSKEY, --awsAccessKey AWSACCESSKEY 
                         AWS AccessKey of your account </br>
   -keyFile KEYFILE, --keyFile KEYFILE </br>
                         Key File for the instance </br>
