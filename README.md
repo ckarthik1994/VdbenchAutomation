@@ -5,17 +5,20 @@ Automate the Vdbench setup workflow, reducing the setup time from 2 hours to 10 
 Please install boto3 and Fabric before running the scripts
 
 sudo install pip
+
 sudo pip install virtualenv
+
 virtualenv vdbench_automation
- source vdbench/bin/activate
+
+source vdbench_automation/bin/activate
 
 sudo pip install boto3
 sudo pip install fabric
 
 ### Getting Set Up
 1.	Fork this repository on GitHub.
-2.	Clone your forked repository (not our original one) to your hard drive with git clone https://github.com/YOURUSERNAME/aws_deploy.git
-3.	cd 
+2.	Clone your forked repository (not our original one) to your hard drive with 
+   git clone https://github.com/ckarthik1994/VdbenchAutomation.git
 
 
 ### Important Files:
