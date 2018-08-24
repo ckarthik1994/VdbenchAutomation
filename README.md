@@ -13,7 +13,10 @@ virtualenv vdbench_automation
 source vdbench_automation/bin/activate
 
 sudo pip install boto3
+
 sudo pip install fabric
+
+sudo pip install pyyaml
 
 ### Getting Set Up
 1.	Fork this repository on GitHub.
