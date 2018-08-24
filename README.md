@@ -26,10 +26,13 @@ sudo pip install pyyaml
 
 ### Important Files:
 •	MetaData.csv : This files stores the configurable parameters for the AWS EC2 instances. </br>
-•	vdbench_environment_setup.py : This python file has all the commands for the automation.
+•	vdbench_environment_setup.py : This python file has all the commands for the environment setup.
+•	vdbench_automate_script.py : This python file has all the commands for the Vdbench automation.
+
 
 ### Running the automation
 
+### Environment Setup
 usage: vdbench_environment_setup.py [-h] [-awsAccessId AWSACCESSID] </br>
                                [-awsAccessKey AWSACCESSKEY] [-keyFile KEYFILE] </br>
                                [-region REGION] [-metadataFile METADATAFILE] </br>
@@ -50,4 +53,18 @@ optional arguments: </br>
                         Metadata File </br>
   -stackName STACKNAME, --stackName STACKNAME </br>
                         Name of CloudFormation Stack </br>
+                        
+### Vdbench Automation
+usage: vdbench_automate_script.py [-h] </br>
+                                  (-d JSONCONFIGTEMPLATEDUMP | -m | -f JSONCONFIG) </br>
+
+Arguments for the Vdbench automation script </br>
+
+optional arguments: </br>
+  -h, --help            show this help message and exit </br>
+  -d JSONCONFIGTEMPLATEDUMP, --JSONConfigTemplateDump JSONCONFIGTEMPLATEDUMP </br>
+                        Dump the JSON template in the file provided </br>
+  -m, --JSONConfigMenu  Provide the configrations via menu </br>
+  -f JSONCONFIG, --JSONConfig JSONCONFIG </br>
+                        Provide the JSON configration file </br>
 
